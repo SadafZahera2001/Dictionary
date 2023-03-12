@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- axios library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js"></script>
+    <!-- icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+    <title>Dictionary</title>
+</head>
+
+<body id="div-bg">
+
+    <div class="screen">
+        
+        <div class="container">
+            <div class="toggle">
+                <button id="search-toggle">Search</button>
+                <button id="add-toggle">Add</button>
+                <button id="update-toggle">Update</button>
+                <button id="delete-toggle">Delete</button>
+            </div>
+            <div class="main" id="main">
+                <div id="search-section">
+                    <div class="section-box">
+                        <h2 class="heading">Search a word</h2>
+                        <div class="options">
+                            <div class="col">
+                                <input type="text" placeholder="Type the word here..." id="inp-word">
+                            </div>
+                            <div class="center">
+                                <button id="search-btn" class="circle-btn">
+                                    <i class="fa-solid fa-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="add-section">
+                    <div class="section-box">
+                        <h2 class="heading">Add a new word</h2>
+                        <div class="options">
+                            <div class="col">
+                                <input type="text" placeholder="Type the word here..." id="add-word" />
+                                <input type="text" placeholder="Type the meaning here..." id="add-meaning" />
+                            </div>
+                            <div class="center">
+                                <button id="add-btn" class="circle-btn"><i class="fa-solid fa-add"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="update-section">
+                    <div class="section-box">
+                        <h2 class="heading">Update a word</h2>
+                        <div class="options">
+                            <div class="col">
+                                <input type="text" placeholder="Type the word here..." id="update-word" />
+                                <input type="text" placeholder="Type the new meaning here..." id="update-meaning" />
+                            </div>
+                            <div class="center">
+                                <button id="update-btn" class="circle-btn"><i class="fa-solid fa-pen"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="delete-section">
+                    <div class="section-box">
+                        <h2 class="heading">Delete a word</h2>
+                        <div class="options">
+                            <div class="col">
+                                <input type="text" placeholder="Type the word here..." id="delete-word" />
+                            </div>
+                            <div class="center">
+                                <button id="delete-btn" class="circle-btn"><i class="fa-solid fa-trash"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="result" id="result"></div>
+        </div>
+
+    </div>
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
