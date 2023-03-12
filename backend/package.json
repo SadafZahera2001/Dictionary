@@ -1,0 +1,21 @@
+{
+  "name": "dictionary_backend",
+  "version": "1.0.0",
+  "description": "this dictionary is created as an assignment for dictionary website and uses mongoDB",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ahmad Bilal Zaidi",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongodb": "^5.0.1",
+    "mongoose": "^6.9.2",
+    "nodemon": "^2.0.20"
+  }
+}
